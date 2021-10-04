@@ -27,4 +27,55 @@ import 'dart:io';
 
 void main() {
 
+
+  print('Enter two numbers');
+
+
+  int num1 = int.parse(stdin.readLineSync());
+  int num2 = int.parse(stdin.readLineSync());
+  double result;
+
+
+  print('Enter a number between 0 and 4');
+
+  String userSelection = stdin.readLineSync();
+
+  if(userSelection == '0')
+  {
+    result = (num1 + num2).toDouble();
+  }
+
+  else if(userSelection == '1')
+  {
+    result = (num1 - num2).toDouble();
+  }
+  else if(userSelection == '2')
+  {
+    result = (num1 * num2).toDouble();
+  }
+  else if(userSelection == '3')
+  {
+    result = (num1 / num2).toDouble();
+  }
+  else if(userSelection == '4')
+  {
+    result = (num1 % num2).toDouble();
+  }
+  else
+  {
+    print('i dont know what to do');
+  }
+
+   if(result.toInt().isOdd)
+  {
+    print(result);
+    print(' this number is odd');
+  }
+  else if(result.toInt().isEven)
+  {
+    print(result);
+    print(' this number is even');
+  }
+
+
 }

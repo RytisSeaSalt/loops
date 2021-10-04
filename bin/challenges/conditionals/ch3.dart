@@ -16,4 +16,41 @@ import 'dart:io';
 
 void main() {
 
+  print('Enter two numbers');
+
+
+  int num1 = int.parse(stdin.readLineSync());
+  int num2 = int.parse(stdin.readLineSync());
+
+  double result;
+
+
+  print('Enter a number between 0 and 4');
+
+  String userSelection = stdin.readLineSync();
+
+  if(userSelection == '0')
+  {
+    print(num1 + num2);
+  }
+
+  else if(userSelection == '1')
+  {
+    print(num1 - num2);
+  }
+  else if(userSelection == '2')
+  {
+    print(num1 * num2);
+  }
+  else if(userSelection == '3')
+  {
+    print(num1 / num2);
+  }
+  else if(userSelection == '4')
+  {
+    print(num1 % num2);
+  }
+
+
+
 }
